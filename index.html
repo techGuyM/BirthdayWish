@@ -1,30 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=""><head>
 
-<head>
-    <!-- coding by helpme_coder -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentines day card | @helpme_coder</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Happy Bithday</title>
 
+  <meta name="robots" content="noindex">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  <link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+  <link rel="canonical" href="https://codepen.io/yhunter/pen/vgeGMv">
+
+  
+  
+
+  <style id="INLINE_PEN_STYLESHEET_ID">
+    @import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  background: #99c;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  background: #666;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 2.5em 0;
+  color: #fff;
+}
+
+h1 {
+  color: #666;
+  position: relative;
+  z-index: 1;
+  transition: all 1.5s ease-in-out;
+}
+
+.paper {
+  width: 25em;
+  height: 15em;
+  position: absolute;
+  display: block;
+  top: 2em;
+  left: 2.5em;
+  background: #fff;
+  -webkit-transition: 1.5s ease-in-out;
+  -moz-transition: 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+  z-index: 1;
+  text-align: center;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.back {
+  display: block;
+  position: relative;
+  background: #bbbbbb;
+  top: 0;
+  height: 0;
+  width: 30em;
+  height: 17em;
+  content: "";
+  -webkit-transition: 1.5s ease-in-out;
+  -moz-transition: 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+  box-shadow: 0 0 1em rgba(68, 68, 136, 0.15);
+  z-index: 0;
+}
+
+.container {
+  margin: 0 auto 0 auto;
+  padding: 10em 1em 1em 1em;
+  width: 30em;
+  height: 20em;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  z-index: 0;
+  transition: all 1.5s ease-in-out;
+}
+.container .cover {
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  height: 1em;
+  display: block;
+  -moz-transform: translate(-50%, 0%) scaleY(1);
+  -webkit-transform: translate(-50%, 0%) scaleY(1);
+  transform: translate(-50%, 0%) scaleY(1);
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  margin: 0 auto;
+  border: 15em solid transparent;
+  border-top: 10em solid white;
+  -webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  transition: z-index 1.5s ease-in-out, transform 1.5s ease-in-out, border-top 1.5s ease-in-out;
+  transition-delay: 1.5s;
+  z-index: 30;
+}
+.container:hover .back {
+  top: 10em;
+  z-index: 0;
+}
+.container:hover .back .paper {
+  top: -15em;
+  z-index: 45;
+  height: 30em;
+  transition: z-index 1.5s ease-in-out, top 1.5s ease-in-out, height 1.5s ease-in-out;
+  transition-delay: 1.5s;
+}
+.container:hover .cover {
+  border-top: 10em solid #eee;
+  -moz-transform: translate(-50%, -100%) scaleY(-1);
+  -webkit-transform: translate(-50%, -100%) scaleY(-1);
+  transform: translate(-50%, -100%) scaleY(-1);
+  z-index: 0;
+  transition-delay: 0s;
+}
+.container .bottom {
+  width: 0;
+  margin: 0 auto;
+  position: relative;
+  top: 0em;
+  display: block;
+  border-left: 15em solid #eee;
+  border-right: 15em solid #eee;
+  border-bottom: 7em solid #eee;
+  border-top: 10em solid transparent;
+  -webkit-transition: 1.5s ease-in-out;
+  -moz-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+  z-index: 100;
+}
+  </style>
+
+  
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6d8bf8b4b479137260842506acbb12717dace0823c023e08b96360e60b0840d9.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="valentines">
-            <div class="envelope"></div>
-            <div class="front"></div>
-            <div class="card">
-                <div class="text">Happy</br> Valentine's</br> Day!</div>
-                <div class="heart"></div>
-            </div>
-        </div>
-    </div>
-    <div class="shadow"></div>
-    </div>
-    <script src="script.js"></script>
-</body>
+  <div class="container">
 
-</html>
+  <div class="back">
+    <div class="paper">
+	<h1>🎉 Happy Birthday🎉</h1>
+      <p>Wishing you a day filled with laughter, love, and all the happiness you bring to everyone around you. May this year bring you success, fun, and endless opportunities</p>
+    </div>
+
+    <div class="cover">
+    </div>
+
+    <div class="bottom">
+    </div>
+  </div>
+</div>
+
+<!--<footer>
+ </footer> -->
+  
+  
+
+
+</body></html>
